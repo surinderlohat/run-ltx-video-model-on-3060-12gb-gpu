@@ -1,0 +1,36 @@
+pipeline_type: multi-scale
+checkpoint_path: "ltxv-2b-0.9.8-distilled.safetensors"
+spatial_upscaler_model_path: "ltxv-spatial-upscaler-0.9.8.safetensors"
+downscale_factor: 0.6666666
+# Core diffusion settings
+stg_mode: "attention_values"
+decode_timestep: 0.05
+decode_noise_scale: 0.025
+
+# Text encoder (CPU ONLY)
+text_encoder_model_name_or_path: "PixArt-alpha/PixArt-XL-2-1024-MS"
+
+# Precision (RTX 3060 safe)
+precision: "float16"
+sampler: "from_checkpoint"
+
+# ❌ COMPLETELY DISABLE PROMPT ENHANCERS TO AVOID THE OOM ERROS
+prompt_enhancement_words_threshold: 0
+prompt_enhancer_image_caption_model_name_or_path: null
+prompt_enhancer_llm_model_name_or_path: null
+stochastic_sampling: false
+
+# Passes (keep conservative)
+first_pass:
+  timesteps: [1.0, 0.9937, 0.9875, 0.9812, 0.9750]
+  guidance_scale: 1
+  stg_scale: 0
+  rescaling_scale: 1
+  skip_block_list: [42]
+
+second_pass:
+  timesteps: [0.9094, 0.7250]
+  guidance_scale: 1
+  stg_scale: 0
+  rescaling_scale: 1
+  skip_block_list: [42]
