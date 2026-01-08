@@ -39,8 +39,8 @@ Output FROM My 3060 12GB GPU
 https://github.com/user-attachments/assets/1cc5dc0f-870e-4fe7-b3e3-a08ed5d4da28
 
 
-
-PROMPT
+---
+Prompt
 ```
 A peaceful Indian village at sunrise, soft toon animation style, warm pastel colors. Mud houses with tiled roofs, narrow village path, trees gently moving in the breeze. A young boy walks calmly through the village. Calm, emotional storytelling mood. Clean line art, consistent outlines, sharp edges, high quality animation, no blur, no softness, stable lighting, professional cartoon rendering.
 ```
