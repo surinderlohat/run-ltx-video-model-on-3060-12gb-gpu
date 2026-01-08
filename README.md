@@ -40,6 +40,16 @@ https://github.com/user-attachments/assets/1cc5dc0f-870e-4fe7-b3e3-a08ed5d4da28
 
 
 
+PROMPT
+```
+A peaceful Indian village at sunrise, soft toon animation style, warm pastel colors. Mud houses with tiled roofs, narrow village path, trees gently moving in the breeze. A young boy walks calmly through the village. Calm, emotional storytelling mood. Clean line art, consistent outlines, sharp edges, high quality animation, no blur, no softness, stable lighting, professional cartoon rendering.
+```
+
+Output:
+
+
+https://github.com/user-attachments/assets/90442bbf-86cb-4656-8832-c4a63cab3932
+
 
 
 
